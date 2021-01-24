@@ -1,22 +1,14 @@
 import json
 
+f = open('tmp_files/into_to_python.txt', 'r')
+content = f.readlines()
 data = {}
-data['people'] = []
-data['people'].append({
-    'name': 'Scott',
-    'website': 'stackabuse.com',
-    'from': 'Nebraska'
-})
-data['people'].append({
-    'name': 'Larry',
-    'website': 'google.com',
-    'from': 'Michigan'
-})
-data['people'].append({
-    'name': 'Tim',
-    'website': 'apple.com',
-    'from': 'Alabama'
-})
+data['course'] = []
+
+for line in content:
+    data['course'].append({
+        'link': line,
+    })
 
 file_to_save = 'tmp_files/data.json'
 
