@@ -23,6 +23,7 @@ def elapsed_time(f):
         print(f'Elapsed time: {(t2 - t1) * 1000} ms')
     return wrapper
 
+
 @elapsed_time
 def big_sum():
     num_list = []
