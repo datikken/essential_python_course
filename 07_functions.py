@@ -7,7 +7,6 @@
 #             print(s)
 #     else: print('Meow.')
 
-
 def main():
     x = dict(Buffy = 'meow', Zilla = 'grr', Angel = 'rawr')
     kitten(**x)
